@@ -57,6 +57,27 @@ int main()
         cout<<itr.first<<"\t"<<itr.second<<endl;
     }
     
+    auto it1 = (--marks_set.end());
+    auto it2 = it1;
+    it2--;
+    
+    while(it1!=marks_set.begin()){
+        m1 = it1->first;
+        m2=it2->first;
+        s1 = it1->second;
+        s2 = it2->second;
+        
+        
+        
+        if(it1->first>it2->first){
+            cout<<it1->second<<" "<<it1->first<<endl;
+        }
+        else if(it1->first==it2->first){
+            if(it1->second<it2->second){
+                cout<<it1->second
+            }
+        }
+    }
     
     
 }
